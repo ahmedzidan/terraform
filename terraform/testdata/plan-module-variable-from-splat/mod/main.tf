@@ -1,9 +1,9 @@
 variable "param" {
-  type = "list"
+  type = list(string)
 }
 
 resource "aws_instance" "test" {
-  count    = "2"
+  count = "2"
   thing = "doesnt"
 }
 
